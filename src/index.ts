@@ -13,11 +13,11 @@ const fetchHandler: ExportedHandlerFetchHandler<Environment> = (
 	_environment,
 	_context
 ) => {
-	return new Response('Hello world!');
-};
+	return new Response('Hello world!')
+}
 
 const worker = {
 	fetch: fetchHandler,
-} as ExportedHandler<Environment>;
+} as ExportedHandler<Environment>
 
-export default worker;
+export default worker
